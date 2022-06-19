@@ -9,10 +9,10 @@ import requests
 from requests.auth import HTTPBasicAuth
 import json
 import datetime
+import os
 
-
-# Get config
-configFile = open("config.json", "r")
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+configFile = open(scriptDir + "/config.json", "r")
 configRead = configFile.read()
 configJson = json.loads(configRead)
 config = configJson[0]
