@@ -1,5 +1,12 @@
 [{
-	"market": "USDT-XMR",
-	"amountDollar": 1,
-	"maxPrice": 100
+	"api_url": "https://tradeogre.com/api/v1/",
+	"keys": {
+		"public": "<yourPublicKey>",
+		"secret": "<yourSecretKey>"
+	},
+	"markets": [{
+		"pair": "USDT-XMR",
+		"quantity": 0.01,
+		"maxPrice": 100
+	}]
 }]
